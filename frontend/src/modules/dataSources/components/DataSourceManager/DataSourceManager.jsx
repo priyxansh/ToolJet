@@ -264,7 +264,7 @@ class DataSourceManagerComponent extends React.Component {
       'microsoft_graph',
       'hubspot',
       'gmail',
-    ];
+      'xero'];
     const name = selectedDataSource.name;
     const kind = selectedDataSource?.kind;
     const pluginId = selectedDataSourcePluginId;
@@ -973,6 +973,7 @@ class DataSourceManagerComponent extends React.Component {
       'microsoft_graph',
       'hubspot',
       'gmail',
+      'xero'
     ];
 
     const shouldRenderFooterComponent = this.checkShouldRenderFooterComponent(selectedDataSource?.kind, options);
