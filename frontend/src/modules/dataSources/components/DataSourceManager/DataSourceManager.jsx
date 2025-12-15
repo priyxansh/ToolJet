@@ -409,6 +409,9 @@ class DataSourceManagerComponent extends React.Component {
       case 'googlesheets': {
         return datasourceOptions?.authentication_type?.value === 'service_account' ? true : false;
       }
+      case 'googlesheetsv2': {
+        return datasourceOptions?.authentication_type?.value === 'service_account' ? true : false;
+      }
       default:
         return true;
     }
@@ -973,7 +976,7 @@ class DataSourceManagerComponent extends React.Component {
       'microsoft_graph',
       'xero',
       'hubspot',
-      'gmail',
+      'gmail'
     ];
 
     const shouldRenderFooterComponent = this.checkShouldRenderFooterComponent(selectedDataSource?.kind, options);
